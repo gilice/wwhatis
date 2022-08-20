@@ -18,7 +18,7 @@ async fn main() {
         println!("{}", tpty);
         return;
     }
-    println!("{}", "hello, world");
+
     if args.topics.is_empty() {
         eprintln!("No topics provided. Execute with -h to display usage.");
         return;
