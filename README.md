@@ -9,14 +9,14 @@
 ## Installation
 
 Clone this respository, then install it using `cargo`.
-```bash
-  git clone https://TODO
-  cargo install --path .
+```console
+  $ git clone https://github.com/riceicetea/wwhatis && cd wwhatis
+  $ cargo install --path .
 ```
 
 ## Usage/Examples
 
-```bash
+```console
 wwhatis-rs 0.1.0
 Quickly displays summaries of given topics. This program displays text from Wikipedia, the Free
 Encyclopedia. Check it out at https://wikipedia.org
@@ -28,6 +28,7 @@ ARGS:
     <TOPICS>...    
 
 OPTIONS:
+    -a, --about          Print the about page and info about used libraries
     -f, --formatless     Enable if running in a terminal that doesn't support ANSI escape codes
     -h, --help           Print help information
     -l, --lang <LANG>    The language prefix of the wiki's url that you want to use, like "en" or
@@ -46,8 +47,12 @@ The project is built using some additional optimizations. The `build.sh` script 
  - builds and strips the release version with `cargo`
  - compresses the built binary with [upx](https://upx.github.io)
  - creates a `tar.gz` with the documentation and binary
- - installs the latest build on your own computer: see **installation**
 
+## Nix integration
+> No need to worry if you don't get what this section means. You can develop and use wwhatis without ever touching it.
+
+The package currently provides a flake, but only with a dev shell. Nix packaging isn't supported, because `nix-about` has to fetch online info. I don't have an idea about how I could fix this right now.
+Anyways, a `.envrc` is provided.
 
 ## Acknowledgements
 Check `Cargo.toml` for the full list of packages.
