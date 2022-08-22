@@ -12,6 +12,9 @@
       in
       {
         devShells.default = pkgs.mkShell {
+          shellHook = ''
+            git config core.hooksPath .githooks
+          '';
           buildInputs = with pkgs;
             [
               # basic
@@ -28,6 +31,8 @@
               # needed for SSL
               openssl
               pkg-config
+
+              git
             ];
 
           RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
