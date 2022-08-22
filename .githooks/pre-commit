@@ -7,3 +7,4 @@
 #
 # To enable this hook, rename this file to "pre-commit".
 cargo-about generate about.hbs | sed "s/&quot;/'/g;s/&lt;/</g;s/&gt;/>/g;s/&#x27;/'/g" > thirdparty/THIRDPARTY;
+git add thirdparty/THIRDPARTY
