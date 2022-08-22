@@ -19,7 +19,12 @@ jobs:
     - name: install cargo-about
       run: cargo install --locked cargo-about
     - name: generate with cargo-about
-      run: cargo-about generate about.hbs | sed "s/&quot;/'/g;s/&lt;/</g;s/&gt;/>/g;s/&#x27;/'/g" > thirdparty/THIRDPARTY
+      run: cargo-about generate about.hbs | sed "s/&quot;/'/g;s/&lt;/</g;s/&gt;/>/g;s/&#x27;/'/g" > thirdparty/THIRDPARTYnew
+    - name: test if nothing new
+      if: ${{ hashFiles("thirdparty/THIRDPARTYnew") == hashFiles("thirdparty/THIRDPARTY") }}
+      run: exit 1
+    - name: rename file
+      run: mv thirdparty/THIRDPARTYnew thirdparty/THIRDPARTY
     - name: Commit & Push
       uses: Andro999b/push@v1.3
       with:
@@ -27,3 +32,4 @@ jobs:
         branch: main
         force: false
         message: 'GitHub actions: Cargo-about ${date}'
+    
