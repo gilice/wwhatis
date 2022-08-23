@@ -7,9 +7,9 @@ Unicode License Agreement - Data Files and Software (2016) (#Unicode-DFS-2016): 
 
 
 All text:
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        pin-project-lite (https://github.com/taiki-e/pin-project-lite, version 0.2.9)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - pin-project-lite (https://github.com/taiki-e/pin-project-lite, version 0.2.9)
     
     
                                  Apache License
@@ -189,9 +189,9 @@ Apache License 2.0 (#Apache-2.0)
 
    END OF TERMS AND CONDITIONS
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        windows-sys (https://github.com/microsoft/windows-rs, version 0.36.1)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - windows-sys (https://github.com/microsoft/windows-rs, version 0.36.1)
     
                                      Apache License
                            Version 2.0, January 2004
@@ -395,13 +395,13 @@ Apache License 2.0 (#Apache-2.0)
    See the License for the specific language governing permissions and
    limitations under the License.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        clap (https://github.com/clap-rs/clap, version 3.2.15)
-        clap_derive (https://github.com/clap-rs/clap/tree/master/clap_derive, version 3.2.15)
-        clap_lex (https://github.com/clap-rs/clap/tree/master/clap_lex, version 0.2.4)
-        os_str_bytes (https://github.com/dylni/os_str_bytes, version 6.2.0)
-        ryu (https://github.com/dtolnay/ryu, version 1.0.10)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - clap (https://github.com/clap-rs/clap, version 3.2.15)
+        - clap_derive (https://github.com/clap-rs/clap/tree/master/clap_derive, version 3.2.15)
+        - clap_lex (https://github.com/clap-rs/clap/tree/master/clap_lex, version 0.2.4)
+        - os_str_bytes (https://github.com/dylni/os_str_bytes, version 6.2.0)
+        - ryu (https://github.com/dtolnay/ryu, version 1.0.10)
     
                                      Apache License
                            Version 2.0, January 2004
@@ -605,9 +605,9 @@ Apache License 2.0 (#Apache-2.0)
    See the License for the specific language governing permissions and
    limitations under the License.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        winapi (https://github.com/retep998/winapi-rs, version 0.3.9)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - winapi (https://github.com/retep998/winapi-rs, version 0.3.9)
     
                                      Apache License
                            Version 2.0, January 2004
@@ -811,12 +811,12 @@ Apache License 2.0 (#Apache-2.0)
    See the License for the specific language governing permissions and
    limitations under the License.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        foreign-types (https://github.com/sfackler/foreign-types, version 0.3.2)
-        foreign-types-shared (https://github.com/sfackler/foreign-types, version 0.1.1)
-        native-tls (https://github.com/sfackler/rust-native-tls, version 0.2.10)
-        openssl-macros (https://crates.io/crates/openssl-macros, version 0.1.0)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - foreign-types (https://github.com/sfackler/foreign-types, version 0.3.2)
+        - foreign-types-shared (https://github.com/sfackler/foreign-types, version 0.1.1)
+        - native-tls (https://github.com/sfackler/rust-native-tls, version 0.2.10)
+        - openssl-macros (https://crates.io/crates/openssl-macros, version 0.1.0)
     
                                      Apache License
                            Version 2.0, January 2004
@@ -1021,9 +1021,9 @@ Apache License 2.0 (#Apache-2.0)
    limitations under the License.
 
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        libc (https://github.com/rust-lang/libc, version 0.2.126)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - libc (https://github.com/rust-lang/libc, version 0.2.126)
     
                                   Apache License
                         Version 2.0, January 2004
@@ -1202,17 +1202,17 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
 END OF TERMS AND CONDITIONS
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        futures (https://github.com/rust-lang/futures-rs, version 0.3.21)
-        futures-channel (https://github.com/rust-lang/futures-rs, version 0.3.21)
-        futures-core (https://github.com/rust-lang/futures-rs, version 0.3.21)
-        futures-executor (https://github.com/rust-lang/futures-rs, version 0.3.21)
-        futures-io (https://github.com/rust-lang/futures-rs, version 0.3.21)
-        futures-macro (https://github.com/rust-lang/futures-rs, version 0.3.21)
-        futures-sink (https://github.com/rust-lang/futures-rs, version 0.3.21)
-        futures-task (https://github.com/rust-lang/futures-rs, version 0.3.21)
-        futures-util (https://github.com/rust-lang/futures-rs, version 0.3.21)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - futures (https://github.com/rust-lang/futures-rs, version 0.3.21)
+        - futures-channel (https://github.com/rust-lang/futures-rs, version 0.3.21)
+        - futures-core (https://github.com/rust-lang/futures-rs, version 0.3.21)
+        - futures-executor (https://github.com/rust-lang/futures-rs, version 0.3.21)
+        - futures-io (https://github.com/rust-lang/futures-rs, version 0.3.21)
+        - futures-macro (https://github.com/rust-lang/futures-rs, version 0.3.21)
+        - futures-sink (https://github.com/rust-lang/futures-rs, version 0.3.21)
+        - futures-task (https://github.com/rust-lang/futures-rs, version 0.3.21)
+        - futures-util (https://github.com/rust-lang/futures-rs, version 0.3.21)
     
                                   Apache License
                         Version 2.0, January 2004
@@ -1417,9 +1417,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        http (https://github.com/hyperium/http, version 0.2.8)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - http (https://github.com/hyperium/http, version 0.2.8)
     
                                   Apache License
                         Version 2.0, January 2004
@@ -1623,9 +1623,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        pin-utils (https://github.com/rust-lang-nursery/pin-utils, version 0.1.0)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - pin-utils (https://github.com/rust-lang-nursery/pin-utils, version 0.1.0)
     
                                   Apache License
                         Version 2.0, January 2004
@@ -1829,9 +1829,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        proc-macro-error-attr (https://gitlab.com/CreepySkeleton/proc-macro-error, version 1.0.4)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - proc-macro-error-attr (https://gitlab.com/CreepySkeleton/proc-macro-error, version 1.0.4)
     
                                   Apache License
                         Version 2.0, January 2004
@@ -2035,51 +2035,51 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        autocfg (https://github.com/cuviper/autocfg, version 1.1.0)
-        bitflags (https://github.com/bitflags/bitflags, version 1.3.2)
-        cc (https://github.com/alexcrichton/cc-rs, version 1.0.73)
-        cfg-if (https://github.com/alexcrichton/cfg-if, version 1.0.0)
-        core-foundation (https://github.com/servo/core-foundation-rs, version 0.9.3)
-        core-foundation-sys (https://github.com/servo/core-foundation-rs, version 0.8.3)
-        fastrand (https://github.com/smol-rs/fastrand, version 1.8.0)
-        fnv (https://github.com/servo/rust-fnv, version 1.0.7)
-        hashbrown (https://github.com/rust-lang/hashbrown, version 0.12.3)
-        heck (https://github.com/withoutboats/heck, version 0.4.0)
-        hermit-abi (https://github.com/hermitcore/libhermit-rs, version 0.1.19)
-        httparse (https://github.com/seanmonstar/httparse, version 1.7.1)
-        hyper-tls (https://github.com/hyperium/hyper-tls, version 0.5.0)
-        indexmap (https://github.com/bluss/indexmap, version 1.9.1)
-        itoa (https://github.com/dtolnay/itoa, version 1.0.2)
-        lazy_static (https://github.com/rust-lang-nursery/lazy-static.rs, version 1.4.0)
-        lock_api (https://github.com/Amanieu/parking_lot, version 0.4.7)
-        maplit (https://github.com/bluss/maplit, version 1.0.2)
-        num_cpus (https://github.com/seanmonstar/num_cpus, version 1.13.1)
-        once_cell (https://github.com/matklad/once_cell, version 1.13.0)
-        openssl-probe (https://github.com/alexcrichton/openssl-probe, version 0.1.5)
-        parking_lot (https://github.com/Amanieu/parking_lot, version 0.12.1)
-        parking_lot_core (https://github.com/Amanieu/parking_lot, version 0.9.3)
-        pkg-config (https://github.com/rust-lang/pkg-config-rs, version 0.3.25)
-        proc-macro2 (https://github.com/dtolnay/proc-macro2, version 1.0.41)
-        quote (https://github.com/dtolnay/quote, version 1.0.20)
-        rustversion (https://github.com/dtolnay/rustversion, version 1.0.8)
-        scopeguard (https://github.com/bluss/scopeguard, version 1.1.0)
-        security-framework (https://github.com/kornelski/rust-security-framework, version 2.6.1)
-        security-framework-sys (https://github.com/kornelski/rust-security-framework, version 2.6.1)
-        serde (https://github.com/serde-rs/serde, version 1.0.140)
-        serde_derive (https://github.com/serde-rs/serde, version 1.0.140)
-        serde_json (https://github.com/serde-rs/json, version 1.0.82)
-        signal-hook (https://github.com/vorner/signal-hook, version 0.3.14)
-        signal-hook-mio (https://github.com/vorner/signal-hook, version 0.2.3)
-        signal-hook-registry (https://github.com/vorner/signal-hook, version 1.4.0)
-        smallvec (https://github.com/servo/rust-smallvec, version 1.9.0)
-        socket2 (https://github.com/rust-lang/socket2, version 0.4.4)
-        syn (https://github.com/dtolnay/syn, version 1.0.98)
-        tempfile (https://github.com/Stebalien/tempfile, version 3.3.0)
-        unicode-ident (https://github.com/dtolnay/unicode-ident, version 1.0.2)
-        version_check (https://github.com/SergioBenitez/version_check, version 0.9.4)
-        wasi (https://github.com/bytecodealliance/wasi, version 0.11.0+wasi-snapshot-preview1)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - autocfg (https://github.com/cuviper/autocfg, version 1.1.0)
+        - bitflags (https://github.com/bitflags/bitflags, version 1.3.2)
+        - cc (https://github.com/alexcrichton/cc-rs, version 1.0.73)
+        - cfg-if (https://github.com/alexcrichton/cfg-if, version 1.0.0)
+        - core-foundation (https://github.com/servo/core-foundation-rs, version 0.9.3)
+        - core-foundation-sys (https://github.com/servo/core-foundation-rs, version 0.8.3)
+        - fastrand (https://github.com/smol-rs/fastrand, version 1.8.0)
+        - fnv (https://github.com/servo/rust-fnv, version 1.0.7)
+        - hashbrown (https://github.com/rust-lang/hashbrown, version 0.12.3)
+        - heck (https://github.com/withoutboats/heck, version 0.4.0)
+        - hermit-abi (https://github.com/hermitcore/libhermit-rs, version 0.1.19)
+        - httparse (https://github.com/seanmonstar/httparse, version 1.7.1)
+        - hyper-tls (https://github.com/hyperium/hyper-tls, version 0.5.0)
+        - indexmap (https://github.com/bluss/indexmap, version 1.9.1)
+        - itoa (https://github.com/dtolnay/itoa, version 1.0.2)
+        - lazy_static (https://github.com/rust-lang-nursery/lazy-static.rs, version 1.4.0)
+        - lock_api (https://github.com/Amanieu/parking_lot, version 0.4.7)
+        - maplit (https://github.com/bluss/maplit, version 1.0.2)
+        - num_cpus (https://github.com/seanmonstar/num_cpus, version 1.13.1)
+        - once_cell (https://github.com/matklad/once_cell, version 1.13.0)
+        - openssl-probe (https://github.com/alexcrichton/openssl-probe, version 0.1.5)
+        - parking_lot (https://github.com/Amanieu/parking_lot, version 0.12.1)
+        - parking_lot_core (https://github.com/Amanieu/parking_lot, version 0.9.3)
+        - pkg-config (https://github.com/rust-lang/pkg-config-rs, version 0.3.25)
+        - proc-macro2 (https://github.com/dtolnay/proc-macro2, version 1.0.41)
+        - quote (https://github.com/dtolnay/quote, version 1.0.20)
+        - rustversion (https://github.com/dtolnay/rustversion, version 1.0.8)
+        - scopeguard (https://github.com/bluss/scopeguard, version 1.1.0)
+        - security-framework (https://github.com/kornelski/rust-security-framework, version 2.6.1)
+        - security-framework-sys (https://github.com/kornelski/rust-security-framework, version 2.6.1)
+        - serde (https://github.com/serde-rs/serde, version 1.0.140)
+        - serde_derive (https://github.com/serde-rs/serde, version 1.0.140)
+        - serde_json (https://github.com/serde-rs/json, version 1.0.82)
+        - signal-hook (https://github.com/vorner/signal-hook, version 0.3.14)
+        - signal-hook-mio (https://github.com/vorner/signal-hook, version 0.2.3)
+        - signal-hook-registry (https://github.com/vorner/signal-hook, version 1.4.0)
+        - smallvec (https://github.com/servo/rust-smallvec, version 1.9.0)
+        - socket2 (https://github.com/rust-lang/socket2, version 0.4.4)
+        - syn (https://github.com/dtolnay/syn, version 1.0.98)
+        - tempfile (https://github.com/Stebalien/tempfile, version 3.3.0)
+        - unicode-ident (https://github.com/dtolnay/unicode-ident, version 1.0.2)
+        - version_check (https://github.com/SergioBenitez/version_check, version 0.9.4)
+        - wasi (https://github.com/bytecodealliance/wasi, version 0.11.0+wasi-snapshot-preview1)
     
                                   Apache License
                         Version 2.0, January 2004
@@ -2283,9 +2283,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        proc-macro-error (https://gitlab.com/CreepySkeleton/proc-macro-error, version 1.0.4)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - proc-macro-error (https://gitlab.com/CreepySkeleton/proc-macro-error, version 1.0.4)
     
                                   Apache License
                         Version 2.0, January 2004
@@ -2489,9 +2489,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        log (https://github.com/rust-lang/log, version 0.4.17)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - log (https://github.com/rust-lang/log, version 0.4.17)
     
                                   Apache License
                         Version 2.0, January 2004
@@ -2695,9 +2695,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        vcpkg (https://github.com/mcgoo/vcpkg-rs, version 0.2.15)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - vcpkg (https://github.com/mcgoo/vcpkg-rs, version 0.2.15)
     
                                   Apache License
                         Version 2.0, January 2004
@@ -2902,9 +2902,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        remove_dir_all (https://github.com/XAMPPRocky/remove_dir_all.git, version 0.5.3)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - remove_dir_all (https://github.com/XAMPPRocky/remove_dir_all.git, version 0.5.3)
     
                                   Apache License
                         Version 2.0, January 2004
@@ -3098,9 +3098,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        winapi (https://github.com/retep998/winapi-rs, version 0.3.9)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - winapi (https://github.com/retep998/winapi-rs, version 0.3.9)
     
     // Licensed under the Apache License, Version 2.0
 // <LICENSE-APACHE or http://www.apache.org/licenses/LICENSE-2.0> or the MIT license
@@ -3108,9 +3108,9 @@ Apache License 2.0 (#Apache-2.0)
 // All files in the project carrying such notice may not be copied, modified, or distributed
 // except according to those terms.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        httpdate (https://github.com/pyfisch/httpdate, version 1.0.2)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - httpdate (https://github.com/pyfisch/httpdate, version 1.0.2)
     
     Apache License
 Version 2.0, January 2004
@@ -3314,16 +3314,16 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        dont_disappear (https://gitlab.com/efunb/dont_disappear, version 3.0.1)
-        winapi-i686-pc-windows-gnu (https://github.com/retep998/winapi-rs, version 0.4.0)
-        winapi-x86_64-pc-windows-gnu (https://github.com/retep998/winapi-rs, version 0.4.0)
-        windows_aarch64_msvc (https://github.com/microsoft/windows-rs, version 0.36.1)
-        windows_i686_gnu (https://github.com/microsoft/windows-rs, version 0.36.1)
-        windows_i686_msvc (https://github.com/microsoft/windows-rs, version 0.36.1)
-        windows_x86_64_gnu (https://github.com/microsoft/windows-rs, version 0.36.1)
-        windows_x86_64_msvc (https://github.com/microsoft/windows-rs, version 0.36.1)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - dont_disappear (https://gitlab.com/efunb/dont_disappear, version 3.0.1)
+        - winapi-i686-pc-windows-gnu (https://github.com/retep998/winapi-rs, version 0.4.0)
+        - winapi-x86_64-pc-windows-gnu (https://github.com/retep998/winapi-rs, version 0.4.0)
+        - windows_aarch64_msvc (https://github.com/microsoft/windows-rs, version 0.36.1)
+        - windows_i686_gnu (https://github.com/microsoft/windows-rs, version 0.36.1)
+        - windows_i686_msvc (https://github.com/microsoft/windows-rs, version 0.36.1)
+        - windows_x86_64_gnu (https://github.com/microsoft/windows-rs, version 0.36.1)
+        - windows_x86_64_msvc (https://github.com/microsoft/windows-rs, version 0.36.1)
     
     Apache License
 Version 2.0, January 2004
@@ -3399,9 +3399,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Apache License 2.0 (#Apache-2.0)
-    Used by:
-        openssl (https://github.com/sfackler/rust-openssl, version 0.10.41)
+- Apache License 2.0 (#Apache-2.0)
+    - Used by:
+        - openssl (https://github.com/sfackler/rust-openssl, version 0.10.41)
     
     Copyright 2011-2017 Google Inc.
           2013 Jack Lloyd
@@ -3419,9 +3419,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-BSD 3-Clause 'New' or 'Revised' License (#BSD-3-Clause)
-    Used by:
-        instant (https://github.com/sebcrozet/instant, version 0.1.12)
+- BSD 3-Clause 'New' or 'Revised' License (#BSD-3-Clause)
+    - Used by:
+        - instant (https://github.com/sebcrozet/instant, version 0.1.12)
     
     Copyright (c) 2019, Sébastien Crozet
 All rights reserved.
@@ -3451,9 +3451,9 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Boost Software License 1.0 (#BSL-1.0)
-    Used by:
-        wwhatis-rs (https://crates.io/crates/wwhatis-rs, version 0.1.0)
+- Boost Software License 1.0 (#BSL-1.0)
+    - Used by:
+        - wwhatis-rs (https://crates.io/crates/wwhatis-rs, version 0.1.0)
     
     Boost Software License - Version 1.0 - August 17th, 2003
 
@@ -3479,9 +3479,9 @@ FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        openssl-sys (https://github.com/sfackler/rust-openssl, version 0.9.75)
+- MIT License (#MIT)
+    - Used by:
+        - openssl-sys (https://github.com/sfackler/rust-openssl, version 0.9.75)
     
     Copyright (c) 2014 Alex Crichton
 
@@ -3509,9 +3509,9 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        mio (https://github.com/tokio-rs/mio, version 0.8.4)
+- MIT License (#MIT)
+    - Used by:
+        - mio (https://github.com/tokio-rs/mio, version 0.8.4)
     
     Copyright (c) 2014 Carl Lerche and other MIO contributors
 
@@ -3533,9 +3533,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        hyper (https://github.com/hyperium/hyper, version 0.14.20)
+- MIT License (#MIT)
+    - Used by:
+        - hyper (https://github.com/hyperium/hyper, version 0.14.20)
     
     Copyright (c) 2014-2021 Sean McArthur
 
@@ -3557,9 +3557,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        termios (https://github.com/dcuddeback/termios-rs, version 0.3.3)
+- MIT License (#MIT)
+    - Used by:
+        - termios (https://github.com/dcuddeback/termios-rs, version 0.3.3)
     
     Copyright (c) 2015 David Cuddeback
 
@@ -3582,9 +3582,9 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        schannel (https://github.com/steffengy/schannel-rs, version 0.1.20)
+- MIT License (#MIT)
+    - Used by:
+        - schannel (https://github.com/steffengy/schannel-rs, version 0.1.20)
     
     Copyright (c) 2015 steffengy
 
@@ -3594,9 +3594,9 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        atty (https://github.com/softprops/atty, version 0.2.14)
+- MIT License (#MIT)
+    - Used by:
+        - atty (https://github.com/softprops/atty, version 0.2.14)
     
     Copyright (c) 2015-2019 Doug Tangren
 
@@ -3619,9 +3619,9 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        redox_syscall (https://gitlab.redox-os.org/redox-os/syscall, version 0.2.15)
+- MIT License (#MIT)
+    - Used by:
+        - redox_syscall (https://gitlab.redox-os.org/redox-os/syscall, version 0.2.15)
     
     Copyright (c) 2017 Redox OS Developers
 
@@ -3646,9 +3646,9 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        bytes (https://github.com/tokio-rs/bytes, version 1.2.0)
+- MIT License (#MIT)
+    - Used by:
+        - bytes (https://github.com/tokio-rs/bytes, version 1.2.0)
     
     Copyright (c) 2018 Carl Lerche
 
@@ -3676,9 +3676,9 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        try-lock (https://github.com/seanmonstar/try-lock, version 0.2.3)
+- MIT License (#MIT)
+    - Used by:
+        - try-lock (https://github.com/seanmonstar/try-lock, version 0.2.3)
     
     Copyright (c) 2018 Sean McArthur
 Copyright (c) 2016 Alex Crichton
@@ -3702,9 +3702,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-MIT License (#MIT)
-    Used by:
-        want (https://github.com/seanmonstar/want, version 0.3.0)
+- MIT License (#MIT)
+    - Used by:
+        - want (https://github.com/seanmonstar/want, version 0.3.0)
     
     Copyright (c) 2018-2019 Sean McArthur
 
@@ -3727,9 +3727,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-MIT License (#MIT)
-    Used by:
-        slab (https://github.com/tokio-rs/slab, version 0.4.7)
+- MIT License (#MIT)
+    - Used by:
+        - slab (https://github.com/tokio-rs/slab, version 0.4.7)
     
     Copyright (c) 2019 Carl Lerche
 
@@ -3757,9 +3757,9 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        http-body (https://github.com/hyperium/http-body, version 0.4.5)
+- MIT License (#MIT)
+    - Used by:
+        - http-body (https://github.com/hyperium/http-body, version 0.4.5)
     
     Copyright (c) 2019 Hyper Contributors
 
@@ -3787,11 +3787,11 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        tokio-native-tls (https://github.com/tokio-rs/tls, version 0.3.0)
-        tracing (https://github.com/tokio-rs/tracing, version 0.1.35)
-        tracing-core (https://github.com/tokio-rs/tracing, version 0.1.28)
+- MIT License (#MIT)
+    - Used by:
+        - tokio-native-tls (https://github.com/tokio-rs/tls, version 0.3.0)
+        - tracing (https://github.com/tokio-rs/tracing, version 0.1.35)
+        - tracing-core (https://github.com/tokio-rs/tracing, version 0.1.28)
     
     Copyright (c) 2019 Tokio Contributors
 
@@ -3819,9 +3819,9 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        tower-service (https://github.com/tower-rs/tower, version 0.3.2)
+- MIT License (#MIT)
+    - Used by:
+        - tower-service (https://github.com/tower-rs/tower, version 0.3.2)
     
     Copyright (c) 2019 Tower Contributors
 
@@ -3849,9 +3849,9 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        tokio (https://github.com/tokio-rs/tokio, version 1.20.1)
+- MIT License (#MIT)
+    - Used by:
+        - tokio (https://github.com/tokio-rs/tokio, version 1.20.1)
     
     Copyright (c) 2022 Tokio Contributors
 
@@ -3879,9 +3879,9 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        tokio-macros (https://github.com/tokio-rs/tokio, version 1.8.0)
+- MIT License (#MIT)
+    - Used by:
+        - tokio-macros (https://github.com/tokio-rs/tokio, version 1.8.0)
     
     Copyright (c) 2022 Tokio Contributors
 
@@ -3931,9 +3931,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        textwrap (https://github.com/mgeisler/textwrap, version 0.15.0)
+- MIT License (#MIT)
+    - Used by:
+        - textwrap (https://github.com/mgeisler/textwrap, version 0.15.0)
     
     MIT License
 
@@ -3957,10 +3957,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        strum (https://github.com/Peternator7/strum, version 0.24.1)
-        strum_macros (https://github.com/Peternator7/strum, version 0.24.2)
+- MIT License (#MIT)
+    - Used by:
+        - strum (https://github.com/Peternator7/strum, version 0.24.1)
+        - strum_macros (https://github.com/Peternator7/strum, version 0.24.2)
     
     MIT License
 
@@ -3984,10 +3984,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        crossterm (https://github.com/TimonPost/crossterm, version 0.8.2)
-        crossterm_input (https://github.com/TimonPost/crossterm, version 0.2.1)
+- MIT License (#MIT)
+    - Used by:
+        - crossterm (https://github.com/TimonPost/crossterm, version 0.8.2)
+        - crossterm_input (https://github.com/TimonPost/crossterm, version 0.2.1)
     
     MIT License
 
@@ -4011,14 +4011,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        crossterm_cursor (https://github.com/TimonPost/crossterm, version 0.1.0)
-        crossterm_screen (https://github.com/TimonPost/crossterm, version 0.1.0)
-        crossterm_style (https://github.com/TimonPost/crossterm, version 0.2.0)
-        crossterm_terminal (https://github.com/TimonPost/crossterm, version 0.1.0)
-        crossterm_utils (https://github.com/TimonPost/crossterm, version 0.1.0)
-        spinners (https://github.com/fgribreau/spinners, version 4.1.0)
+- MIT License (#MIT)
+    - Used by:
+        - crossterm_cursor (https://github.com/TimonPost/crossterm, version 0.1.0)
+        - crossterm_screen (https://github.com/TimonPost/crossterm, version 0.1.0)
+        - crossterm_style (https://github.com/TimonPost/crossterm, version 0.2.0)
+        - crossterm_terminal (https://github.com/TimonPost/crossterm, version 0.1.0)
+        - crossterm_utils (https://github.com/TimonPost/crossterm, version 0.1.0)
+        - spinners (https://github.com/fgribreau/spinners, version 4.1.0)
     
     MIT License
 
@@ -4030,11 +4030,11 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        crossterm (https://github.com/crossterm-rs/crossterm, version 0.24.0)
-        crossterm_winapi (https://github.com/TimonPost/crossterm_winapi, version 0.1.5)
-        crossterm_winapi (https://github.com/crossterm-rs/crossterm-winapi, version 0.9.0)
+- MIT License (#MIT)
+    - Used by:
+        - crossterm (https://github.com/crossterm-rs/crossterm, version 0.24.0)
+        - crossterm_winapi (https://github.com/TimonPost/crossterm_winapi, version 0.1.5)
+        - crossterm_winapi (https://github.com/crossterm-rs/crossterm-winapi, version 0.9.0)
     
     MIT License
 
@@ -4058,9 +4058,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        tracing-core (https://github.com/tokio-rs/tracing, version 0.1.28)
+- MIT License (#MIT)
+    - Used by:
+        - tracing-core (https://github.com/tokio-rs/tracing, version 0.1.28)
     
     The MIT License (MIT)
 
@@ -4084,10 +4084,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        memchr (https://github.com/BurntSushi/memchr, version 2.5.0)
-        termcolor (https://github.com/BurntSushi/termcolor, version 1.1.3)
+- MIT License (#MIT)
+    - Used by:
+        - memchr (https://github.com/BurntSushi/memchr, version 2.5.0)
+        - termcolor (https://github.com/BurntSushi/termcolor, version 1.1.3)
     
     The MIT License (MIT)
 
@@ -4111,9 +4111,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        strsim (https://github.com/dguo/strsim-rs, version 0.10.0)
+- MIT License (#MIT)
+    - Used by:
+        - strsim (https://github.com/dguo/strsim-rs, version 0.10.0)
     
     The MIT License (MIT)
 
@@ -4139,9 +4139,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        winapi-util (https://github.com/BurntSushi/winapi-util, version 0.1.5)
+- MIT License (#MIT)
+    - Used by:
+        - winapi-util (https://github.com/BurntSushi/winapi-util, version 0.1.5)
     
     The MIT License (MIT)
 
@@ -4165,19 +4165,19 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-MIT License (#MIT)
-    Used by:
-        memchr (https://github.com/BurntSushi/memchr, version 2.5.0)
-        termcolor (https://github.com/BurntSushi/termcolor, version 1.1.3)
-        winapi-util (https://github.com/BurntSushi/winapi-util, version 0.1.5)
+- MIT License (#MIT)
+    - Used by:
+        - memchr (https://github.com/BurntSushi/memchr, version 2.5.0)
+        - termcolor (https://github.com/BurntSushi/termcolor, version 1.1.3)
+        - winapi-util (https://github.com/BurntSushi/winapi-util, version 0.1.5)
     
     This project is dual-licensed under the Unlicense and MIT licenses.
 
 You may use this code under the terms of either license.
 
-MIT License (#MIT)
-    Used by:
-        urlencoding (https://github.com/kornelski/rust_urlencoding, version 2.1.0)
+- MIT License (#MIT)
+    - Used by:
+        - urlencoding (https://github.com/kornelski/rust_urlencoding, version 2.1.0)
     
     © 2016 Bertram Truong
 © 2021 Kornel Lesiński
@@ -4200,9 +4200,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Unicode License Agreement - Data Files and Software (2016) (#Unicode-DFS-2016)
-    Used by:
-        unicode-ident (https://github.com/dtolnay/unicode-ident, version 1.0.2)
+- Unicode License Agreement - Data Files and Software (2016) (#Unicode-DFS-2016)
+    - Used by:
+        - unicode-ident (https://github.com/dtolnay/unicode-ident, version 1.0.2)
     
     UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE
 
