@@ -28,11 +28,13 @@ let
     wwhatis_pkg = (import wwhatis_drv system).default;
 in
 # ...
-environment.systemPackages = with pkgs; [
+{
+    environment.systemPackages = with pkgs; [
     # ...
     wwhatis_pkg
     # ...
-];
+    ]
+};
 ```
 
 ## Usage/Examples
