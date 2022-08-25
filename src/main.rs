@@ -4,7 +4,6 @@ use hyper::{body, header, Body, Client, Response, Uri};
 use hyper_tls::HttpsConnector;
 use spinners::{Spinner, Spinners};
 use std::process::Command;
-mod model;
 
 extern crate dont_disappear;
 extern crate hyper;
@@ -69,16 +68,19 @@ async fn main() {
         }
     }))
     .await;
-    let mut urls = Vec::<String>::new();
+    let mut urls = Vec::new();
     for body in bodies {
+        //println!("{:#?}", body);
         // parse response
 
-        let parsed_res: model::summary_response::SummaryResponse =
-            serde_json::from_str(body.as_str()).unwrap();
+        let parsed_res_new = json::parse(body.as_str()).expect("Could not parse response as JSON");
 
         if is_multiple {
-            let title = parsed_res.titles.display;
-
+            let title = String::from(
+                parsed_res_new["titles"]["normalized"]
+                    .as_str()
+                    .unwrap_or("No title"),
+            );
             let prefix = format!(
                 "{}: ",
                 if args.formatless {
@@ -92,25 +94,38 @@ async fn main() {
             queue[1] += prefix.as_str();
             queue[2] += prefix.as_str();
         }
-        let mut desc = parsed_res.description.replace("\n", " ");
+
+        let mut desc = parsed_res_new["description"]
+            .as_str()
+            .unwrap_or("No description")
+            .replace("\n", " ");
         desc.retain(|c| (!c.is_whitespace() || c == ' '));
 
         queue[0] += format!("{}\n", desc).as_str();
 
-        let mut ext = parsed_res.extract.replace("\n", " ");
+        let mut ext = parsed_res_new["extract"]
+            .as_str()
+            .unwrap_or("No extract")
+            .replace("\n", " ");
         ext.retain(|c| (!c.is_whitespace() || c == ' '));
 
         queue[1] += format!("{}\n", ext).as_str();
-
         let current_url = if args.mobile {
-            parsed_res.content_urls.mobile.page
+            parsed_res_new["content_urls"]["mobile"]["page"]
+                .as_str()
+                .unwrap_or("No mobile url")
+                .to_string()
         } else {
-            parsed_res.content_urls.desktop.page
+            parsed_res_new["content_urls"]["desktop"]["page"]
+                .as_str()
+                .unwrap_or("No desktop url")
+                .to_string()
         };
-        queue[2] += format!("{}\n", current_url).as_str();
 
+        queue[2] += format!("{}\n", current_url).as_str();
         urls.push(current_url);
     }
+
     spinner.stop();
     // clear the spinner line.
     print!("\x1b[2K\r\nFrom Wikipedia, the Free Encyclopedia. License: https://creativecommons.org/licenses/by-sa/3.0/\n---\n");
@@ -123,8 +138,8 @@ async fn main() {
 
     print!("{}", queue[2]);
     if args.open {
-        for url in urls {
-            let urlstr = url.as_str();
+        for url in &urls {
+            let urlstr = url;
             Command::new("xdg-open")
                 .arg(urlstr)
                 .output()
