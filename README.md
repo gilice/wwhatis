@@ -34,7 +34,7 @@ in
     wwhatis_pkg
     # ...
     ];
-};
+}
 ```
 
 ## Usage/Examples
