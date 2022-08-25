@@ -14,6 +14,26 @@ Clone this respository, then install it using `cargo`.
   $ cargo install --path .
 ```
 
+or, on [NixOS](https://nixos.org), install it by adding the following to your `configuration.nix`:
+```nix
+wwhatis_drv = fetchFromGitHub {
+	owner = "riceicetea";
+	repo = "wwhatis";
+	rev = "main";
+    # fill out the sha256hash from here
+	sha256 = "...";
+};
+
+wwhatis_pkg = (import wwhatis_drv system).default;
+# ...
+
+environment.systemPackages = [
+    # ...
+    wwhatis_pkg
+    # ...
+];
+```
+
 ## Usage/Examples
 
 ```console
@@ -41,18 +61,13 @@ OPTIONS:
 
 
 ## Building a release version
-The project is built using some additional optimizations. The `build.sh` script automates this process. It does the following:
+ - generate about page (it should be auto-generated for you on every commit, but to be sure do it again) with [cargo-about](https://crates.io/crates/cargo-about)
+ - `nix build`
 
- - generates about page with [cargo-about](https://crates.io/crates/cargo-about)
- - builds and strips the release version with `cargo`
- - compresses the built binary with [upx](https://upx.github.io)
+### Optional: create release bundle
+ - compress the built binary with [upx](https://upx.github.io)
  - creates a `tar.gz` with the documentation and binary
 
-## Nix integration
-> No need to worry if you don't get what this section means. You can develop and use wwhatis without ever touching it.
-
-The package currently provides a flake, but only with a dev shell. Nix packaging isn't supported, because `nix-about` has to fetch online info. I don't have an idea about how I could fix this right now.
-Anyways, a `.envrc` is provided.
 
 ## Acknowledgements
 Check `Cargo.toml` for the full list of packages.
