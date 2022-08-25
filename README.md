@@ -75,9 +75,9 @@ OPTIONS:
 ## Acknowledgements
 Check `Cargo.toml` for the full list of packages.
 
-- **Programming anguage:** [Rust](https://rust-lang.org)
+- **Programming language:** [Rust](https://rust-lang.org)
 
-- **HTTP client, parallelism, parsing**: [hyper](https://hyper.rs/) and [hyper-tls](https://crates.io/crates/hyper-tls), [tokio](https://github.com/tokio-rs/tokio) and [futures](https://crates.io/crates/futures), [serde](https://serde.rs)
+- **HTTP client, parallelism, parsing**: [hyper](https://hyper.rs/) and [hyper-tls](https://crates.io/crates/hyper-tls), [tokio](https://github.com/tokio-rs/tokio) and [futures](https://crates.io/crates/futures)
 
 - **Terminal features:** [crossterm](https://crates.io/crates/crossterm), [dont_disappear](https://crates.io/crates/dont_disappear), [spinners](https://crates.io/crates/spinners), [clap](https://crates.io/crates/clap) 
 - [readme.so](https://readme.so), online README *ide*
