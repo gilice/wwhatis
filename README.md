@@ -16,18 +16,19 @@ Clone this respository, then install it using `cargo`.
 
 or, on [NixOS](https://nixos.org), install it by adding the following to your `configuration.nix`:
 ```nix
-wwhatis_drv = fetchFromGitHub {
-	owner = "riceicetea";
-	repo = "wwhatis";
-	rev = "main";
-    # fill out the sha256hash from here
-	sha256 = "...";
-};
+let
+    wwhatis_drv = fetchFromGitHub {
+	    owner = "riceicetea";
+	    repo = "wwhatis";
+	    rev = "main";
+        # fill out the sha256hash from here
+	    sha256 = "...";
+    };
 
-wwhatis_pkg = (import wwhatis_drv system).default;
+    wwhatis_pkg = (import wwhatis_drv system).default;
+in
 # ...
-
-environment.systemPackages = [
+environment.systemPackages = with pkgs; [
     # ...
     wwhatis_pkg
     # ...
