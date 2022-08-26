@@ -6,11 +6,11 @@ use json::JsonValue;
 pub fn parse_utf8(os_str: &OsString) -> &str {
     os_str
         .to_str()
-        .expect(format!("Could not parse argument {:?} as UTF8", &os_str).as_str())
+        .unwrap_or_else(|| panic!("Could not parse argument {:?} as UTF8", &os_str))
 }
 
 pub fn trim_and_shorten(str: &str) -> String {
-    let mut nw = str.replace("\n", " ");
+    let mut nw = str.replace('\n', " ");
     nw.retain(|c| (!c.is_whitespace() || c == ' '));
     return nw;
 }
@@ -56,11 +56,11 @@ pub fn bodies_to_queue(
     mobile: &bool,
 ) -> ([String; 3], Vec<String>) {
     let is_multiple = topics.len() > 1;
-    let mut queue: [String; 3] = Default::default();
+    let mut queue: [String; 3] = <[String; 3]>::default();
     let mut urls = vec![];
     for i in 0..bodies.len() {
         let parsed_response = json::parse(&bodies[i].as_str())
-            .expect(format!("Could not parse response for {} as JSON", topics[i]).as_str());
+            .unwrap_or_else(|_| panic!("Could not parse response for {} as JSON", topics[i]));
 
         if is_multiple {
             let title = String::from(

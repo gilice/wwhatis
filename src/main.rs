@@ -53,19 +53,17 @@ async fn main() {
                 let bytes = body::to_bytes(resp.into_body()).await.unwrap();
 
                 return String::from_utf8(bytes.to_vec())
-                    .expect(format!("Response for {} was not valid utf-8", topic).as_str());
+                    .unwrap_or_else(|_| panic!("Response for {} was not valid utf-8", topic));
             }
         }))
         .await;
-        // let mut urls = Vec::new();
-        // let mut queue: [String; 3] = Default::default();
 
         let (mut queue, urls) =
             convert::bodies_to_queue(&bodies, &parsed.topics, &parsed.formatless, &parsed.mobile);
 
         spinner.stop();
         // clear the spinner line & print attribution
-        print!("\x1b[2K\r\n{}\n---\n", utils::cli::ATTRIBUTION);
+        println!("\x1b[2K\r\n{}\n---", utils::cli::ATTRIBUTION);
 
         for i in 0..2 {
             let sstr = &mut queue[i];

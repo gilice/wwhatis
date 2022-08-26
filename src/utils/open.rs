@@ -4,5 +4,5 @@ pub fn open_link(url: &String) {
     Command::new("xdg-open")
         .arg(url)
         .output()
-        .expect(format!("Could not display url {}", &url).as_str());
+        .unwrap_or_else(|_| panic!("Could not display url {}", &url));
 }

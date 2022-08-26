@@ -1,5 +1,6 @@
 
 # wwhatis
+[![DeepSource](https://deepsource.io/gh/riceicetea/wwhatis.svg/?label=active+issues&token=inb7TRgRwVgWhU03A9O9N22v)](https://deepsource.io/gh/riceicetea/wwhatis/)
 
 `wwhatis` (Wiki, what is?) is a simple command line program that displays short summaries of concepts from [Wikipedia, the Free Encyclopedia](https://www.wikipedia.org). It's designed to help you understand a topic in an instant, while enabling you to conduct further research easily. 
 
