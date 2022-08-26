@@ -19,8 +19,7 @@ codegen-units = 1
 panic = "abort"
 
 [dependencies]
-clap = { version = "3.2.14", features = ["derive"] }
-crossterm = "0.24.0"
+crossterm = "0.25.0"
 dont_disappear = "3.0.1"
 futures = "0.3.21"
 hyper = { version = "0.14.20", features = ["client", "http1"] }

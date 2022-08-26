@@ -77,8 +77,9 @@ Check `Cargo.toml` for the full list of packages.
 
 - **Programming language:** [Rust](https://rust-lang.org)
 
-- **HTTP client, parallelism, parsing**: [hyper](https://hyper.rs/) and [hyper-tls](https://crates.io/crates/hyper-tls), [tokio](https://github.com/tokio-rs/tokio) and [futures](https://crates.io/crates/futures)
+- **HTTP client, parallelism, parsing**: [hyper](https://hyper.rs/) and [hyper-tls](https://crates.io/crates/hyper-tls), [tokio](https://github.com/tokio-rs/tokio) and [futures](https://crates.io/crates/futures), [json](https://crates.io/crates/json)
 
-- **Terminal features:** [crossterm](https://crates.io/crates/crossterm), [dont_disappear](https://crates.io/crates/dont_disappear), [spinners](https://crates.io/crates/spinners), [clap](https://crates.io/crates/clap) 
+- **Terminal features:** [crossterm](https://crates.io/crates/crossterm), [dont_disappear](https://crates.io/crates/dont_disappear), [spinners](https://crates.io/crates/spinners)
+
 - [readme.so](https://readme.so), online README *ide*
 - [How to write a Good README](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
