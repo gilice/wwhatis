@@ -1,13 +1,13 @@
-use crate::helpers::convert::parse_utf8;
+use crate::utils::open::open_link;
 use crossterm::style::Stylize;
 use hyper::{body, header, Body, Client, Response, Uri};
 use hyper_tls::HttpsConnector;
 use spinners::{Spinner, Spinners};
-use std::{env, io::stdout, process::Command};
+use std::{env, io::stdout};
 extern crate dont_disappear;
 extern crate hyper;
 extern crate tokio;
-mod helpers;
+mod utils;
 #[tokio::main]
 async fn main() {
     let out = stdout();
@@ -18,30 +18,7 @@ async fn main() {
     if let Some(farg) = plain_args_it.next() {
         let (mut args, mut topics) = (vec![farg], vec![]);
         args.extend(plain_args_it);
-        let mut lang = "en";
-        let (mut formatless, mut mobile, mut open) = (false, false, false);
-        for arg in &args {
-            dbg!(&arg);
-            let parsed = parse_utf8(&arg);
-            match parsed {
-                "--help" | "-h" => {
-                    helpers::help::help(&out);
-                    return;
-                }
-
-                "--about" | "-a" => {
-                    let tpty = include_str!("../thirdparty/THIRDPARTY");
-                    println!("{}", tpty);
-                    return;
-                }
-
-                "--formatless" | "-f" => formatless = true,
-                "--mobile" | "-m" => mobile = true,
-                "--open" | "-o" => open = true,
-                "--lang" | "-l" => lang = parsed,
-                _ => topics.push(parsed),
-            }
-        }
+        let parsed = utils::args::parse(&args, &out);
 
         //let args: Input = Input::parse();
 
@@ -59,8 +36,9 @@ async fn main() {
         let mut spinner = Spinner::new(Spinners::Dots, "Loading...".into());
         let bodies = futures::future::join_all(topics.into_iter().map(|url| {
             let client = &client;
-            let lang_clone = lang;
-            let url_clone = url;
+            let lang_clone = parsed.lang;
+            let url_clone = parsed.url;
+
             async move {
                 let url_encoded = urlencoding::encode(url_clone);
 
@@ -97,9 +75,6 @@ async fn main() {
         .await;
         let mut urls = Vec::new();
         for body in bodies {
-            //println!("{:#?}", body);
-            // parse response
-
             let parsed_response =
                 json::parse(body.as_str()).expect("Could not parse response as JSON");
 
@@ -111,7 +86,7 @@ async fn main() {
                 );
                 let prefix = format!(
                     "{}: ",
-                    if formatless {
+                    if parsed.formatless {
                         title
                     } else {
                         title.bold().green().to_string()
@@ -138,7 +113,7 @@ async fn main() {
             ext.retain(|c| (!c.is_whitespace() || c == ' '));
 
             queue[1] += format!("{}\n", ext).as_str();
-            let current_url = if mobile {
+            let current_url = if parsed.mobile {
                 parsed_response["content_urls"]["mobile"]["page"]
                     .as_str()
                     .unwrap_or("No mobile url")
@@ -165,18 +140,15 @@ async fn main() {
         }
 
         print!("{}", queue[2]);
-        if open {
+
+        if parsed.open {
             for url in &urls {
-                let urlstr = url;
-                Command::new("xdg-open")
-                    .arg(urlstr)
-                    .output()
-                    .expect(format!("Could not display url {}", urlstr).as_str());
+                open_link(url);
             }
         }
     } else {
         // No options provided, print help and exit
-        helpers::help::help(&out);
+        utils::args::help(&out);
         return;
     }
 }
