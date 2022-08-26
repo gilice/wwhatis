@@ -16,28 +16,21 @@ async fn main() {
     plain_args_it.next();
 
     if let Some(farg) = plain_args_it.next() {
-        let (mut args, mut topics) = (vec![farg], vec![]);
+        let mut args = vec![farg];
         args.extend(plain_args_it);
         let parsed = utils::args::parse(&args, &out);
 
-        //let args: Input = Input::parse();
-
-        if topics.is_empty() {
-            eprintln!("No topics provided. Execute with -h to display usage.");
-            return;
-        }
-
-        let is_multiple: bool = topics.len() > 1;
+        let is_multiple: bool = parsed.topics.len() > 1;
         let mut queue: [String; 3] = Default::default();
         let https = HttpsConnector::new();
 
         let client = Client::builder().build::<_, Body>(https);
 
         let mut spinner = Spinner::new(Spinners::Dots, "Loading...".into());
-        let bodies = futures::future::join_all(topics.into_iter().map(|url| {
+        let bodies = futures::future::join_all(parsed.topics.into_iter().map(|url| {
             let client = &client;
             let lang_clone = parsed.lang;
-            let url_clone = parsed.url;
+            let url_clone = url;
 
             async move {
                 let url_encoded = urlencoding::encode(url_clone);

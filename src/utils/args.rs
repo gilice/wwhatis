@@ -1,6 +1,7 @@
 use std::{
     ffi::OsString,
     io::{Stdout, Write},
+    process,
 };
 
 use crate::utils::convert::parse_utf8;
@@ -32,7 +33,7 @@ pub fn help(mut out: &Stdout) {
     return;
 }
 
-pub fn parse(args: &Vec<OsString>, out: &Stdout) -> &Arguments {
+pub fn parse<'a>(args: &'a Vec<OsString>, out: &'a Stdout) -> Arguments<'a> {
     let mut ret_args = Arguments {
         formatless: false,
         mobile: false,
@@ -42,18 +43,17 @@ pub fn parse(args: &Vec<OsString>, out: &Stdout) -> &Arguments {
     };
 
     for arg in args {
-        dbg!(&arg);
         let parsed = parse_utf8(&arg);
         match parsed {
             "--help" | "-h" => {
                 help(&out);
-                return;
+                process::exit(1);
             }
 
             "--about" | "-a" => {
                 let tpty = include_str!("../../thirdparty/THIRDPARTY");
                 println!("{}", tpty);
-                return;
+                process::exit(1);
             }
 
             "--formatless" | "-f" => ret_args.formatless = true,
@@ -63,21 +63,27 @@ pub fn parse(args: &Vec<OsString>, out: &Stdout) -> &Arguments {
             _ => ret_args.topics.push(parsed),
         }
     }
-    return &ret_args;
+
+    if ret_args.topics.is_empty() {
+        eprintln!("No topics provided. Execute with -h to display usage.");
+        process::exit(1);
+    }
+
+    return ret_args;
 }
 
-struct Arguments<'a> {
-    topics: Vec<&'a str>,
+pub struct Arguments<'a> {
+    pub topics: Vec<&'a str>,
 
     /// The language prefix of the wiki's url that you want to use, like "en" or "de"
-    lang: &'a str,
+    pub lang: &'a str,
 
     /// Return URL in mobile (m.wikipedia.org) version
-    mobile: bool,
+    pub mobile: bool,
 
     /// Enable if running in a terminal that doesn't support ANSI escape codes
-    formatless: bool,
+    pub formatless: bool,
 
     /// Open the article URLs on the last step in your default web browser with xdg-open (only works on *nix)
-    open: bool,
+    pub open: bool,
 }
