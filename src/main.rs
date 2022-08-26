@@ -21,9 +21,6 @@ async fn main() {
         args.extend(plain_args_it);
 
         let parsed = utils::cli::parse(&args, &out);
-        let is_multiple: bool = parsed.topics.len() > 1;
-        let mut queue: [String; 3] = Default::default();
-
         let https = HttpsConnector::new();
         let client = Client::builder().build::<_, Body>(https);
         let mut spinner = Spinner::new(Spinners::Dots, "Loading...".to_string());
@@ -60,50 +57,11 @@ async fn main() {
             }
         }))
         .await;
-        let mut urls = Vec::new();
-        for i in 0..bodies.len() {
-            let parsed_response = json::parse(&bodies[i].as_str()).expect(
-                format!("Could not parse response for {} as JSON", parsed.topics[i]).as_str(),
-            );
+        // let mut urls = Vec::new();
+        // let mut queue: [String; 3] = Default::default();
 
-            if is_multiple {
-                let title = String::from(
-                    parsed_response["titles"]["normalized"]
-                        .as_str()
-                        .unwrap_or("No title"),
-                );
-                let prefix = convert::add_prefix(parsed.formatless, title);
-
-                queue[0] += prefix.as_str();
-                queue[1] += prefix.as_str();
-                queue[2] += prefix.as_str();
-            }
-
-            // add description to queue
-            queue[0] += format!(
-                "{}\n",
-                convert::trim_and_shorten(
-                    parsed_response["description"]
-                        .as_str()
-                        .unwrap_or("No description"),
-                )
-            )
-            .as_str();
-
-            // add extract to queue
-            queue[1] += format!(
-                "{}\n",
-                convert::trim_and_shorten(
-                    parsed_response["extract"].as_str().unwrap_or("No extract")
-                )
-            )
-            .as_str();
-
-            let current_url = convert::get_page_url(parsed.mobile, &parsed_response);
-
-            queue[2] += format!("{}\n", current_url).as_str();
-            urls.push(current_url);
-        }
+        let (mut queue, urls) =
+            convert::bodies_to_queue(&bodies, &parsed.topics, &parsed.formatless, &parsed.mobile);
 
         spinner.stop();
         // clear the spinner line & print attribution

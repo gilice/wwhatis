@@ -48,3 +48,56 @@ pub fn add_prefix(formatless: bool, title: String) -> String {
         }
     );
 }
+
+pub fn bodies_to_queue(
+    bodies: &Vec<String>,
+    topics: &Vec<&str>,
+    formatless: &bool,
+    mobile: &bool,
+) -> ([String; 3], Vec<String>) {
+    let is_multiple = topics.len() > 1;
+    let mut queue: [String; 3] = Default::default();
+    let mut urls = vec![];
+    for i in 0..bodies.len() {
+        let parsed_response = json::parse(&bodies[i].as_str())
+            .expect(format!("Could not parse response for {} as JSON", topics[i]).as_str());
+
+        if is_multiple {
+            let title = String::from(
+                parsed_response["titles"]["normalized"]
+                    .as_str()
+                    .unwrap_or("No title"),
+            );
+            let prefix = add_prefix(*formatless, title);
+
+            queue[0] += prefix.as_str();
+            queue[1] += prefix.as_str();
+            queue[2] += prefix.as_str();
+        }
+
+        // add description to queue
+        queue[0] += format!(
+            "{}\n",
+            trim_and_shorten(
+                parsed_response["description"]
+                    .as_str()
+                    .unwrap_or("No description"),
+            )
+        )
+        .as_str();
+
+        // add extract to queue
+        queue[1] += format!(
+            "{}\n",
+            trim_and_shorten(parsed_response["extract"].as_str().unwrap_or("No extract"))
+        )
+        .as_str();
+
+        let current_url = get_page_url(*mobile, &parsed_response);
+
+        queue[2] += format!("{}\n", current_url).as_str();
+        urls.push(current_url);
+    }
+
+    return (queue, urls);
+}
