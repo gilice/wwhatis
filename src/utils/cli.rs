@@ -28,6 +28,8 @@ pub static HELP: &[u8] = r#"wwhatis-rs 0.1.0
         -V, --version        Print version information
     "#.as_bytes();
 
+pub static ATTRIBUTION: &str = r#"From Wikipedia, the Free Encyclopedia. License: https://creativecommons.org/licenses/by-sa/3.0/"#;
+
 pub fn help(mut out: &Stdout) {
     out.write(HELP).unwrap();
     return;
